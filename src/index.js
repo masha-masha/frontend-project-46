@@ -8,25 +8,26 @@ return object;
 };
 
 
-const genDiff = (data1, data2) => {
-  const keys1 = Object.keys(way(data1));
-  const keys2 = Object.keys(way(data2));
+const genDiff = (file1, file2) => {
+  const data1 = way(file1);
+  const data2 = way(file2);
+  const keys1 = Object.keys(data1);
+  const keys2 = Object.keys(data2);
+  const keys = _.union(keys1, keys2).sort(); 
 
-  const keys = _.union(keys1, keys2); 
-
-  const result = {};
+  let result = '';
   for (const key of keys) {
     if (!Object.hasOwn(data1, key)) {
-      result[key] = 'added';
+      result += `\n  + ${key} : ${data2[key]}`;
     } else if (!Object.hasOwn(data2, key)) {
-      result[key] = 'deleted';
+      result += `\n  - ${key} : ${data1[key]}`;
     } else if (data1[key] !== data2[key]) {
-      result[key] = 'changed';
+      result += `\n  - ${key} : ${data1[key]} \n  + ${key} : ${ data2[key] }` ;
     } else {
-      result[key] = 'unchanged';
+      result += `\n    ${key} : ${data1[key]}`;
     }
   }
 
-  return result;
+  return `{ ${result} \n }`;
 };
 export default genDiff;
