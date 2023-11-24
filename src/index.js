@@ -9,6 +9,7 @@ return object;
 
 
 const genDiff = (file1, file2) => {
+  
   const data1 = way(file1);
   const data2 = way(file2);
   const keys1 = Object.keys(data1);
