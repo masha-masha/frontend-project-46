@@ -2,7 +2,7 @@ import fs from 'fs';
 import _ from 'lodash';
 import path from 'path';
 const way = (file) => {
-const full = path.resolve('./_fixtures_', file);
+const full = path.resolve('./__fixtures__', file);
 const object = JSON.parse(fs.readFileSync(full, {encoding: 'utf-8'}));
 return object;
 };
@@ -32,3 +32,4 @@ const genDiff = (file1, file2) => {
   return `{ ${result} \n }`;
 };
 export default genDiff;
+
