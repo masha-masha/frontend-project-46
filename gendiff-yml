@@ -1,0 +1,12 @@
+{"version": 2, "width": 144, "height": 19, "timestamp": 1704902815, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
+[0.018316, "o", "\u001b[?2004h\u001b]0;maria@LAPTOP-5DSRJPHI: ~/frontend-project-46\u0007\u001b[01;32mmaria@LAPTOP-5DSRJPHI\u001b[00m:\u001b[01;34m~/frontend-project-46\u001b[00m$ "]
+[2.269553, "o", "exit"]
+[3.008467, "o", "\b\b\b\bnpx eslint . --fix"]
+[3.640599, "o", "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[10Pgit push"]
+[4.296254, "o", "\b\b\b\bcommit -m 'something with eslint'"]
+[5.154606, "o", "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\bpush\u001b[K"]
+[5.86093, "o", "\b\b\b\b\b\b\b\bnpx eslint . --fix"]
+[6.634611, "o", "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\bexit\u001b[K"]
+[7.300409, "o", "\b\b\b\b\u001b[K"]
+[8.160613, "o", "exit"]
+[8.724038, "o", "\r\n\u001b[?2004l\rexit\r\n"]

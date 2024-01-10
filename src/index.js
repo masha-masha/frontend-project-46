@@ -1,21 +1,15 @@
-import fs from 'fs';
+
 import _ from 'lodash';
-import path from 'path';
-const way = (file) => {
-const full = path.resolve('./__fixtures__', file);
-const object = JSON.parse(fs.readFileSync(full, {encoding: 'utf-8'}));
-return object;
-};
+import parsed from './parsers.js';
 
 
 const genDiff = (file1, file2) => {
-  
-  const data1 = way(file1);
-  const data2 = way(file2);
+  const data1 = parsed(file1);
+  const data2= parsed(file2);
   const keys1 = Object.keys(data1);
   const keys2 = Object.keys(data2);
   const keys = _.union(keys1, keys2).sort(); 
-
+ 
   let result = '';
   for (const key of keys) {
     if (!Object.hasOwn(data1, key)) {
