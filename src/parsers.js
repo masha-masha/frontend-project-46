@@ -1,20 +1,18 @@
 import yaml from 'js-yaml';
-import path from 'path';
-import fs from 'fs';
 
 
-const parsed = (data) => {
-const way =  path.resolve('./__fixtures__', data);
-const extname = path.extname(data);
+
+const parse = (content, extname) => {
 switch (extname) {
-    case '.json':
-      return JSON.parse(fs.readFileSync(way, {encoding: 'utf-8'}));
-    case '.yml':
-    case '.yaml':
-      return yaml.load(fs.readFileSync(way, {encoding: 'utf-8'}));
+    case 'json':
+      return JSON.parse(content);
+    case 'yml':
+      return yaml.load(content);
+    case 'yaml':
+      return yaml.load(content);
     default:
       throw new Error(`Error: "${extname}" - this extname is not supported`);
   }
 };
 
-export default parsed;
+export default parse;
