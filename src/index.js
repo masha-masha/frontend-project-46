@@ -4,7 +4,7 @@ import parse from './parsers.js';
 import path from 'path';
 import fs from 'fs';
 import getDiffTree from './getDiffTree.js';
-import getFormatStylish from './formatters/formatStylish.js';
+import getFormat from './formatters/index.js';
 
 const readFile = (file) => {
   const way = path.resolve('./__fixtures__', file);
@@ -16,11 +16,11 @@ const readFile = (file) => {
 
 };
 
-const genDiff = (file1, file2) => {
+const genDiff = (file1, file2, format) => {
   const data1 = readFile(file1);
   const data2 = readFile(file2);
   const diffTree = getDiffTree(data1, data2)
-  return getFormatStylish(diffTree);
+  return getFormat(diffTree, format);
 };
 
 export default genDiff;
