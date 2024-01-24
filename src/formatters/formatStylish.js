@@ -1,9 +1,8 @@
 import _ from 'lodash';
 
-const spacesCount = 4;
-const indent = (depth) => ' '.repeat((depth * spacesCount) - 2);
-
 const getFormatStylish = (diffTree) => {
+  const spacesCount = 4;
+  const indent = (depth) => ' '.repeat((depth * spacesCount) - 2);
   const stringify = (data, depth = 1) => {
     if (!_.isObject(data)) {
       return `${data}`;
