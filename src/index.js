@@ -9,9 +9,7 @@ import getFormat from './formatters/index.js';
 const readFile = (file) => {
   const way = path.resolve('./__fixtures__', file);
   const extname = path.extname(file).slice(1);
-  const read = fs.readFileSync(way, {
-    encoding: 'utf-8'
-  })
+  const read = fs.readFileSync(way, {encoding: 'utf-8'});
   return parse(read, extname);
 
 };
