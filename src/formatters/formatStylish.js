@@ -1,20 +1,21 @@
 import _ from 'lodash';
 
-const getFormatStylish = (diffTree) => {
-  const spacesCount = 4;
-  const indent = (depth) => ' '.repeat((depth * spacesCount) - 2);
-  const stringify = (data, depth = 1) => {
-    if (!_.isObject(data)) {
-      return `${data}`;
-    }
-    const keys = Object.entries(data);
-    const strings = keys.map(([key, value]) => {
-      const checkedValue = stringify(value, depth + 1);
-      return `${indent(depth + 1)}  ${key}: ${checkedValue}`;
-    });
-    return `{\n${strings.join('\n')}\n  ${indent(depth)}}`;
-  };
+const spacesCount = 4;
+const indent = (depth) => ' '.repeat((depth * spacesCount) - 2);
 
+const stringify = (data, depth = 1) => {
+  if (!_.isObject(data)) {
+    return `${data}`;
+  }
+  const keys = Object.entries(data);
+  const strings = keys.map(([key, value]) => {
+    const checkedValue = stringify(value, depth + 1);
+    return `${indent(depth + 1)}  ${key}: ${checkedValue}`;
+  });
+  return `{\n${strings.join('\n')}\n  ${indent(depth)}}`;
+};
+
+const getFormatStylish = (diffTree) => {
   const iter = (tree, depth = 1) => tree.map((node) => {
     const createStrWithSing = (value, sign) => `${indent(depth)}${sign} ${node.key}: ${stringify(value, depth)}\n`;
     switch (node.type) {
