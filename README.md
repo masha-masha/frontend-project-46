@@ -4,4 +4,4 @@
 <p> <h2>Video</h2> 
     <a href="https://asciinema.org/a/630840" target="_blank"><img src="https://asciinema.org/a/630840.svg" /></a>
 </p>
-
+<a href="https://codeclimate.com/github/masha-masha/frontend-project-46/test_coverage"><img src="https://api.codeclimate.com/v1/badges/fa82e5dd2e7d270d9bc7/test_coverage" /></a>
