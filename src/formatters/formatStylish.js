@@ -10,7 +10,7 @@ const getFormatStylish = (diffTree) => {
     const keys = Object.entries(data);
     const strings = keys.map(([key, value]) => {
       const checkedValue = stringify(value, depth + 1);
-      return `${indent(depth + 1)}  ${key}: ${checkedValue}`
+      return `${indent(depth + 1)}  ${key}: ${checkedValue}`;
     });
     return `{\n${strings.join('\n')}\n  ${indent(depth)}}`;
   };

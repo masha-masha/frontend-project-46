@@ -3,7 +3,7 @@ import formatPlain from './formatPlain.js';
 import getFormatStylish from './formatStylish.js';
 
 const getFormat = (abstractSyntaxTree, format) => {
-    switch(format) {
+  switch (format) {
     case 'json':
       return getFormatJson(abstractSyntaxTree);
     case 'plain':

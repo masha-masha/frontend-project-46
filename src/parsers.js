@@ -1,9 +1,7 @@
 import yaml from 'js-yaml';
 
-
-
 const parse = (content, extname) => {
-switch (extname) {
+  switch (extname) {
     case 'json':
       return JSON.parse(content);
     case 'yml':
