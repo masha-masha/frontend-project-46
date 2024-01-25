@@ -11,7 +11,7 @@ const readFile = (file) => {
   return parse(read, extname);
 };
 
-const genDiff = (file1, file2, format) => {
+const genDiff = (file1, file2, format = 'stylish') => {
   const data1 = readFile(file1);
   const data2 = readFile(file2);
   const diffTree = getDiffTree(data1, data2);

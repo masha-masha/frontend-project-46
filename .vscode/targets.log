@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Jan 25 16:42:26 2024
+# Make data base, printed on Thu Jan 25 17:47:25 2024
 
 # Variables
 
@@ -111,7 +111,7 @@ LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:
 # automatic
 +F = $(notdir $+)
 # environment
-WSL_INTEROP = /run/WSL/32927_interop
+WSL_INTEROP = /run/WSL/477_interop
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
@@ -133,7 +133,7 @@ _ = /home/maria/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/node
 # environment
 XDG_RUNTIME_DIR = /run/user/1000/
 # environment
-VSCODE_IPC_HOOK_CLI = /run/user/1000/vscode-ipc-ceb35915-b896-4a44-b16f-ef17cc53d3f2.sock
+VSCODE_IPC_HOOK_CLI = /run/user/1000/vscode-ipc-f4bfab0c-a31d-485d-a304-d89eb18d924b.sock
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -254,7 +254,7 @@ install:
 # strcache performance: lookups = 40 / hit rate = 27%
 # hash-table stats:
 # Load=29/8192=0%, Rehash=0, Collisions=0/40=0%
-# Finished Make data base on Thu Jan 25 16:42:26 2024
+# Finished Make data base on Thu Jan 25 17:47:25 2024
 
  
 make: *** No rule to make target 'all'.  Stop.
