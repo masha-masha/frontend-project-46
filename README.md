@@ -6,9 +6,7 @@
 ### Difference Finder:
 <p>The utility compares two configuration files(JSON,Yaml or Yml) and shows the differences</p>
 ### Installation
-```sh
-   npm link
-   ```
+  npm link
 <p> <h2> without nested structure</h2> 
     <a href="https://asciinema.org/a/633490" target="_blank"><img src="https://asciinema.org/a/633490.svg" /></a>
 </p>
