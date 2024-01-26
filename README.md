@@ -5,7 +5,7 @@
 <a href="https://codeclimate.com/github/masha-masha/frontend-project-46/test_coverage"><img src="https://api.codeclimate.com/v1/badges/fa82e5dd2e7d270d9bc7/test_coverage" /></a>
 ### Difference Finder:
 <p>The utility compares two configuration files(JSON,Yaml or Yml) and shows the differences</p>
-<p> <h1>Installation:</h1> 
+<p> <h3>Installation:</h3> 
   npm link 
 </p>
 <p> <h2> without nested structure</h2> 
