@@ -5,9 +5,10 @@
 <a href="https://codeclimate.com/github/masha-masha/frontend-project-46/test_coverage"><img src="https://api.codeclimate.com/v1/badges/fa82e5dd2e7d270d9bc7/test_coverage" /></a>
 ### Difference Finder:
 <p>The utility compares two configuration files(JSON,Yaml or Yml) and shows the differences</p>
-### Installation:
-  <p> npm link </p>
-<p> <h2> without nested structure </h2> 
+<p><h2>Installation</h2>
+   npm link 
+</p>
+<p> <h2> without nested structure</h2> 
     <a href="https://asciinema.org/a/633490" target="_blank"><img src="https://asciinema.org/a/633490.svg" /></a>
 </p>
 <p> <h2> nested structure, format 'stylish' </h2>
