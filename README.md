@@ -1,8 +1,23 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/masha-masha/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/masha-masha/frontend-project-46/actions)
+### Code Climate reviews:
 <a href="https://codeclimate.com/github/masha-masha/frontend-project-46/maintainability"><img src="https://api.codeclimate.com/v1/badges/fa82e5dd2e7d270d9bc7/maintainability" /></a>
 <a href="https://codeclimate.com/github/masha-masha/frontend-project-46/test_coverage"><img src="https://api.codeclimate.com/v1/badges/fa82e5dd2e7d270d9bc7/test_coverage" /></a>
-<p> <h2>Video</h2> 
-    <a href="https://asciinema.org/a/630840" target="_blank"><img src="https://asciinema.org/a/630840.svg" /></a>
+### Difference Finder:
+<p>The utility compares two configuration files(JSON,Yaml or Yml) and shows the differences</p>
+### Installation
+```sh
+   npm link
+   ```
+<p> <h2> without nested structure</h2> 
+    <a href="https://asciinema.org/a/633490" target="_blank"><img src="https://asciinema.org/a/633490.svg" /></a>
 </p>
-
+<p> <h2> nested structure, format 'stylish' </h2>
+<a href="https://asciinema.org/a/633491" target="_blank"><img src="https://asciinema.org/a/633491.svg" /></a>
+</p>
+<p> <h2> nested structure, format 'plain' <h2>
+<a href="https://asciinema.org/a/633493" target="_blank"><img src="https://asciinema.org/a/633493.svg" /></a>
+</p>
+<p> <h2> nested structure, format 'json' </h2>
+<a href="https://asciinema.org/a/633495" target="_blank"><img src="https://asciinema.org/a/633495.svg" /></a>
+<p>

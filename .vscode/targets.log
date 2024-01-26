@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Jan 25 17:47:25 2024
+# Make data base, printed on Fri Jan 26 12:38:20 2024
 
 # Variables
 
@@ -111,7 +113,7 @@ LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:
 # automatic
 +F = $(notdir $+)
 # environment
-WSL_INTEROP = /run/WSL/477_interop
+WSL_INTEROP = /run/WSL/522_interop
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
@@ -133,7 +135,7 @@ _ = /home/maria/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/node
 # environment
 XDG_RUNTIME_DIR = /run/user/1000/
 # environment
-VSCODE_IPC_HOOK_CLI = /run/user/1000/vscode-ipc-f4bfab0c-a31d-485d-a304-d89eb18d924b.sock
+VSCODE_IPC_HOOK_CLI = /run/user/1000/vscode-ipc-e8f522b5-6066-4617-9054-7e2645d7ad18.sock
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -254,8 +256,6 @@ install:
 # strcache performance: lookups = 40 / hit rate = 27%
 # hash-table stats:
 # Load=29/8192=0%, Rehash=0, Collisions=0/40=0%
-# Finished Make data base on Thu Jan 25 17:47:25 2024
+# Finished Make data base on Fri Jan 26 12:38:20 2024
 
  
-make: *** No rule to make target 'all'.  Stop.
-
