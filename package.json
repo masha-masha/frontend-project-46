@@ -16,9 +16,7 @@
   "dependencies": {
     "commander": "^11.1.0",
     "js-yaml": "^4.1.0",
-    "lodash": "^4.17.21",
-    "path": "^0.12.7",
-    "url": "^0.11.3"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
