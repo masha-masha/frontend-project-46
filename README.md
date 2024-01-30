@@ -25,8 +25,8 @@
          npm link
       </li>
       <li><h3>Run utility with command:</h3>
-        <p>gendiff -f format filepath1 filepath2</p>
-         <p>or gendiff filepath1 filepath2 (the utility uses default format: stylish)</p>
+        <p>gendiff -f format filepath1 filepath2<br>or gendiff filepath1 filepath2 (the utility uses default format: stylish)</br>
+        </p>
       </li>
    </ol>
 </p>
