@@ -3,23 +3,19 @@ import { describe, expect, test } from '@jest/globals';
 import readFile from '../src/utils.js';
 import genDiff from '../src/index.js';
 
-describe('output', () => {
-  test('stylish works', () => {
-    const expectedStylish = readFile('stylishFormatTest.txt');
-    const file1 = 'file1.json';
-    const file2 = 'file2.yaml';
-    expect(genDiff(file1, file2, 'stylish')).toEqual(expectedStylish);
-  });
-  test('plain works', () => {
-    const expectedPlain = readFile('plainFormatTest.txt');
-    const file1 = 'file1.json';
-    const file2 = 'file2.json';
-    expect(genDiff(file1, file2, 'plain')).toEqual(expectedPlain);
-  });
-  test('json works', () => {
-    const expectedJson = readFile('jsonFormatTest.txt');
-    const file1 = 'file1.yaml';
-    const file2 = 'file2.json';
-    expect(genDiff(file1, file2, 'json')).toEqual(expectedJson);
-  });
+describe('check output', () => {
+  const testFormats = [
+    ['file1.json', 'file2.yaml', 'stylishFormatTest.txt'],
+    ['file1.json', 'file2.yaml', 'stylishFormatTest.txt', 'stylish'],
+    ['file1.json', 'file2.yaml', 'plainFormatTest.txt', 'plain'],
+    ['file1.json', 'file2.yaml', 'jsonFormatTest.txt', 'json'],
+  ];
+  test.each(testFormats)(
+    'formatters work',
+    (file1, file2, expectedFile, format = 'stylish') => {
+      const result = genDiff(file1, file2, format);
+      const expected = readFile(expectedFile);
+      expect(result.trim()).toEqual(expected);
+    },
+  );
 });
