@@ -1,18 +1,13 @@
 /* eslint no-underscore-dangle: 0 */
 import path from 'path';
-import fs from 'fs';
-import { fileURLToPath } from 'url';
 import parse from './parsers.js';
 import getDiffTree from './getDiffTree.js';
 import getFormat from './formatters/index.js';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+import readFile from './utils.js';
 
 const dataFromFile = (file) => {
-  const filePath = path.resolve(__dirname, '..', '__fixtures__', file);
   const extname = path.extname(file).slice(1);
-  const read = fs.readFileSync(filePath, { encoding: 'utf-8' });
+  const read = readFile(file);
   return parse(read, extname);
 };
 
