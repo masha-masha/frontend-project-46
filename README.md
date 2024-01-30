@@ -1,4 +1,4 @@
-<h1>Difference Finder:<h1>
+<h1>Difference Finder:</h1>
 <p>The utility compares two configuration files(JSON,Yaml or Yml) and shows the differences</p>
 
 ### Hexlet tests and linter status:
@@ -25,7 +25,7 @@
          npm link
       </li>
       <li><h3>Run utility with command:</h3>
-         gendiff -f format <filepath1> <filepath2>
+         gendiff -f format filepath1 filepath2
       </li>
    </ol>
 </p>
