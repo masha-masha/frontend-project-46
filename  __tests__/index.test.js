@@ -15,7 +15,7 @@ describe('check output', () => {
     (file1, file2, expectedFile, format = 'stylish') => {
       const result = genDiff(file1, file2, format);
       const expected = readFile(expectedFile);
-      expect(result.trim()).toEqual(expected);
+      expect(result).toEqual(expected);
     },
   );
 });
