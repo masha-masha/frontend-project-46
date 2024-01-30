@@ -1,4 +1,4 @@
-### Difference Finder:
+<h1>Difference Finder:<h1>
 <p>The utility compares two configuration files(JSON,Yaml or Yml) and shows the differences</p>
 
 ### Hexlet tests and linter status:
@@ -7,40 +7,37 @@
 ### Code Climate reviews:
 <a href="https://codeclimate.com/github/masha-masha/frontend-project-46/maintainability"><img src="https://api.codeclimate.com/v1/badges/fa82e5dd2e7d270d9bc7/maintainability" /></a>
 <a href="https://codeclimate.com/github/masha-masha/frontend-project-46/test_coverage"><img src="https://api.codeclimate.com/v1/badges/fa82e5dd2e7d270d9bc7/test_coverage" /></a>
-<p><h3>System requirements</h3>
+<p><h2>System requirements</h2>
    <ul>
       <li>node.js v21.1.0</li>
       <li>npm v10.2.3</li>
    </ul>
 </p>
-<p><h3>Installation</h3>
-   <pre>
+<p><h2>Installation</h2>
    <ol>
-      <li>Clone the repository locally:
+      <li><h3>Clone the repository locally:</h3>
          git@github.com:masha-masha/frontend-project-46.git
       </li>
-      <li>Install all dependencies:
+      <li><h3>Install all dependencies:</h3>
          npm ci
       </li>
-      <li>Install  apps global
+      <li><h3>Install  apps global</h3>
          npm link
       </li>
-      <li>
-         Run utility with command:
+      <li><h3>Run utility with command:</h3>
          gendiff -f format <filepath1> <filepath2>
       </li>
    </ol>
-         </pre>
 </p>
-<p> <h3> without nested structure</h3> 
+<p> <h2> without nested structure</h2> 
     <a href="https://asciinema.org/a/633490" target="_blank"><img src="https://asciinema.org/a/633490.svg" /></a>
 </p>
-<p> <h3> nested structure, format 'stylish' </h3>
+<p> <h2> nested structure, format 'stylish' </h2>
 <a href="https://asciinema.org/a/633491" target="_blank"><img src="https://asciinema.org/a/633491.svg" /></a>
 </p>
-<p> <h3> nested structure, format 'plain' <h3>
+<p> <h2> nested structure, format 'plain' <h2>
 <a href="https://asciinema.org/a/633493" target="_blank"><img src="https://asciinema.org/a/633493.svg" /></a>
 </p>
-<p> <h3> nested structure, format 'json' </h3>
+<p> <h2> nested structure, format 'json' </h2>
 <a href="https://asciinema.org/a/633495" target="_blank"><img src="https://asciinema.org/a/633495.svg" /></a>
 <p>
