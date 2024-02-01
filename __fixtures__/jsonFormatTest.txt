@@ -6,7 +6,7 @@
       {
         "type": "added",
         "key": "follow",
-        "value2": false
+        "value": false
       },
       {
         "type": "unchanged",
@@ -27,12 +27,12 @@
       {
         "type": "added",
         "key": "setting4",
-        "value2": "blah blah"
+        "value": "blah blah"
       },
       {
         "type": "added",
         "key": "setting5",
-        "value2": {
+        "value": {
           "key5": "value5"
         }
       },
@@ -60,7 +60,7 @@
           {
             "type": "added",
             "key": "ops",
-            "value2": "vops"
+            "value": "vops"
           }
         ]
       }
@@ -104,7 +104,7 @@
   {
     "type": "added",
     "key": "group3",
-    "value2": {
+    "value": {
       "deep": {
         "id": {
           "number": 45

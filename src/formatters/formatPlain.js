@@ -17,7 +17,7 @@ const getFormatPlain = (diffTree) => {
         const current = `${before}${node.key}`;
         switch (node.type) {
           case 'added':
-            return `Property '${current}' was added with value: ${checkedValue(node.value2)}`;
+            return `Property '${current}' was added with value: ${checkedValue(node.value)}`;
           case 'removed':
             return `Property '${current}' was removed`;
           case 'changed':

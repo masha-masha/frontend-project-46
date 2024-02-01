@@ -20,7 +20,7 @@ const getFormatStylish = (diffTree) => {
     const createStrWithSing = (value, sign) => `${indent(depth)}${sign} ${node.key}: ${stringify(value, depth)}\n`;
     switch (node.type) {
       case 'added':
-        return createStrWithSing(node.value2, '+');
+        return createStrWithSing(node.value, '+');
       case 'removed':
         return createStrWithSing(node.value, '-');
       case 'unchanged':
