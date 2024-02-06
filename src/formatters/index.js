@@ -11,7 +11,7 @@ const getFormat = (abstractSyntaxTree, format) => {
     case 'stylish':
       return getFormatStylish(abstractSyntaxTree);
     default:
-      throw new Error(`Error: "${format}" - this extname is not supported`);
+      throw new Error(`Error: "${format}" - this format is not supported`);
   }
 };
 
